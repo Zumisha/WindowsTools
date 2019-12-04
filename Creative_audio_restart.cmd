@@ -10,7 +10,11 @@ if %errorLevel% NEQ 0 (
     echo.
     pause
     exit
-)  
+)   
 
-net use /d Z:
-net use Z: \\serv-pc\Distr
+rem %~dpnx0    - drive letter, path, file name, extention of this file.
+
+net stop "Creative Audio Service"
+net stop "Windows Audio"
+net start "Windows Audio"
+net start "Creative Audio Service"
