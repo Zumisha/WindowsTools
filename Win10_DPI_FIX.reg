@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"DpiScalingVer"=dword:1018
+"Win8DpiScaling"=dword:1
+"LogPixels"=dword:78
